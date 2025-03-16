@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Smart Insurance Application Portal
 
-## Getting Started
+## Introduction
+The **Smart Insurance Application Portal** is a dynamic web application built with Next.js (App Router) that allows users to apply for different types of insurance through dynamically generated forms. Users can submit applications, view and manage their submissions, and customize the displayed data.
 
-First, run the development server:
+## Features
+### ✅ Smart Dynamic Forms
+- Fetches form structures dynamically from an API.
+- Conditional logic to show/hide fields based on user responses.
+- Nested sections for complex forms (e.g., Address, Vehicle Details).
+- Dynamic field options based on API responses.
+- Validation before form submission.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### ✅ Customizable List View
+- Displays submitted applications in a table.
+- Users can customize which columns to display.
+- Sorting, searching, and pagination.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### ✅ API Endpoints Used
+- `GET /api/insurance/forms` → Fetches form structures.
+- `POST /api/insurance/forms/submit` → Submits a completed form.
+- `GET /api/insurance/forms/submissions` → Fetches submitted applications.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech Stack
+- **Framework**: Next.js 15 (App Router)
+- **UI Library**: Ant Design (AntD)
+- **State Management**: Redux Toolkit
+- **Drag & Drop**: DnD Kit
+- **Internationalization**: Next-Intl
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Installation & Setup
+### Prerequisites
+- Node.js 18+
+- npm or yarn
 
-## Learn More
+### Steps to Run Locally
+1. **Clone the repository**
+   ```sh
+   git clone https://github.com/yourusername/smart-insurance.git
+   cd smart-insurance
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Install dependencies**
+   ```sh
+   npm install
+   # or
+   yarn install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Run the development server**
+   ```sh
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. **Open in browser**
+   Visit [http://localhost:3000](http://localhost:3000).
 
-## Deploy on Vercel
+## Deployment
+This project is optimized for deployment on **Vercel**. It is currently live at [Smart Insurance Portal](https://devotel-three.vercel.app). To deploy:
+1. Install Vercel CLI: `npm install -g vercel`
+2. Run `vercel` and follow the setup instructions.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Assumptions & Notes
+- Forms are fully dynamic and fetched from an external API.
+- Users can filter, sort, and paginate through submissions.
+- Multi-language support is available via `next-intl`.
+- Drag-and-drop functionality is used for customizing list views.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Bonus Features
+- 📝 **Autosave draft before submission**
+- 🌙 **Dark mode support**
+- 🌍 **Multi-language support**
+
+## Contributing
+Contributions are welcome! Feel free to submit a pull request.
+
+## License
+MIT License © 2024 Smart Insurance Application
+
