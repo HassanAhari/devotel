@@ -1,0 +1,24 @@
+{
+  "LocaleSwitcher": {
+    "label": "Language",
+    "locale": "{locale, select, en {🇺🇸 English} fa {🇮🇷 Persian} other {Unknown}}"
+  },
+  "HomePage": {
+    "title": "Smart Dynamic Forms",
+    "form": {
+      "title": "Smart Dynamic Forms",
+      "action": "View Forms"
+    },
+    "submission": {
+      "title": "Submitted Applications",
+      "action": "View Submissions"
+    }
+  },
+  "InsuranceFormsPage": {
+    "form_list": "Form List",
+    "submit": "Submit"
+  },
+  "SubmissionsPage": {
+    "title": "Submitted Applications"
+  }
+}
