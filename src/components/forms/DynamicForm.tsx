@@ -28,7 +28,7 @@ interface DynamicFormProps {
 
 interface FieldData {
   name: (string | number)[];
-  value?: any;
+  value?: string | number | boolean;
   touched?: boolean;
   validating?: boolean;
   errors?: string[];
@@ -272,10 +272,7 @@ export default function DynamicForm({ formStructure }: DynamicFormProps) {
         form={form}
         layout="horizontal"
         initialValues={formData}
-        onFieldsChange={(
-          changedFields: FieldData[],
-          allFields: FieldData[]
-        ) => {
+        onFieldsChange={(changedFields: FieldData[]) => {
           if (changedFields.length > 1) return;
 
           const updatedData = changedFields.reduce((acc, field) => {

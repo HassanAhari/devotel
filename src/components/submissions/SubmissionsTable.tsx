@@ -82,7 +82,7 @@ export default function SubmissionsTable({
   columnNames,
 }: SubmissionsTableProps) {
   const t = useTranslations("SubmissionsPage");
-  let tableColumns: ColumnsType<Submission> = [
+  const tableColumns: ColumnsType<Submission> = [
     { key: "sort", align: "center", width: 80, render: () => <DragHandle /> },
   ];
 

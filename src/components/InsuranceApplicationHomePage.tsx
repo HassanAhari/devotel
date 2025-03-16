@@ -27,7 +27,9 @@ export default function InsuranceApplicationHomePage() {
             <Card
               variant="borderless"
               actions={[
-                <Link href="/insurance/forms">{t("form.action")}</Link>,
+                <Link key={"action"} href="/insurance/forms">
+                  {t("form.action")}
+                </Link>,
               ]}
             >
               <Title level={5} style={{ padding: 0, margin: 0 }}>
@@ -39,7 +41,7 @@ export default function InsuranceApplicationHomePage() {
             <Card
               variant="borderless"
               actions={[
-                <Link href="/insurance/forms/submissions">
+                <Link key={"action"} href="/insurance/forms/submissions">
                   {t("submission.action")}
                 </Link>,
               ]}

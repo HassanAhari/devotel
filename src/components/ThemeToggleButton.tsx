@@ -6,7 +6,7 @@ import { MoonFilled, SunFilled } from "@ant-design/icons";
 import { useState, useEffect } from "react";
 
 export default function ThemeToggleButton() {
-  const { toggleTheme, currentTheme } = useTheme();
+  const { toggleTheme } = useTheme();
   const [isLight, setIsLight] = useState(true);
 
   useEffect(() => {
